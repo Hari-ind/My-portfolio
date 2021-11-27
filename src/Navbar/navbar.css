@@ -1,0 +1,125 @@
+.nav-list {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.logo {
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  transition: all 0.5s ease 0s !important;
+}
+.nav-list {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.li {
+  padding: 0rem 2rem;
+  color: #ffffff;
+  list-style-type: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.nav-link {
+  text-decoration: none;
+}
+.nav-toggle {
+  display: none;
+  position: relative;
+}
+.navbar-mob {
+  background: #040c18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: end;
+
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+
+  min-width: 110px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(230, 214, 214, 0.2);
+}
+
+.li-mb {
+  padding: 0.8rem;
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+}
+.li-mb::after {
+  content: "";
+  display: block;
+  margin-top: 0.3rem;
+  width: 0;
+  height: 2px;
+  background: var(--color-span);
+  transition: width 0.3s;
+}
+
+.li-mb:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.li::after {
+  content: "";
+  display: block;
+  margin-top: 0.5rem;
+  width: 0;
+  height: 2px;
+  background: var(--color-span);
+  transition: width 0.3s;
+}
+
+.li:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+@media screen and (max-width: 1050px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+  .section {
+    margin: 1rem 6rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section {
+    margin: 1rem 6rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section {
+    margin: 1rem 2rem;
+    margin-bottom: 6rem;
+  }
+  .li-mb {
+    font-size: 0.8rem;
+  }
+  .navbar-mob {
+    min-width: 90px;
+  }
+}
