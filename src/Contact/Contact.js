@@ -27,8 +27,8 @@ function Contact() {
         </label>
       </form>
       <div className="c-left">
-        <form name="contact" method="POST" data-netlify="true" netlify>
-          <input type="hidden" name="form-name" value="contact" />
+        <form name="contact1" method="POST" data-netlify="true" netlify>
+          <input type="hidden" name="form-name" value="contact1" />
           <label htmlFor="fname">
             Name:
             <input
