@@ -1,50 +1,29 @@
 import React from "react";
 import "./contact.css";
-import { useState } from "react";
+
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Contact() {
-  const [fname, setFname] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
   return (
     <div className="container section">
       <div className="c-left">
-        <form onSubmit={handleSubmit}>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="fname">
-            {" "}
             Name:
-            <input
-              type="text"
-              id="fname"
-              value={fname}
-              placeholder="Enter your name"
-              onChange={(e) => setFname(e.target.value)}
-            />
+            <input type="text" id="fname" placeholder="Enter your name" />
           </label>
           <label htmlFor="email">
             Email Address:
             <input
               type="email"
               id="email"
-              value={email}
               placeholder="Enter your email address"
-              onChange={(e) => setEmail(e.target.value)}
             />
           </label>
           <label htmlFor="message">
             Message:
-            <textarea
-              id="subject"
-              value={message}
-              placeholder="Enter your message"
-              onChange={(e) => setMessage(e.target.value)}
-            />
+            <textarea id="subject" placeholder="Enter your message" />
           </label>
           <input style={{ textAlign: "center" }} type="submit" />
         </form>
