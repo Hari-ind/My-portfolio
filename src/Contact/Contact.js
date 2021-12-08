@@ -6,26 +6,6 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 function Contact() {
   return (
     <div className="container section">
-      <form
-        name="contact"
-        netlify
-        netlify-honeypot="bot-field"
-        action="/"
-        hidden
-      >
-        <label htmlFor="fname">
-          Name:
-          <input type="text" id="fname" />
-        </label>
-        <label htmlFor="email">
-          Email Address:
-          <input type="email" id="email" />
-        </label>
-        <label htmlFor="message">
-          Message:
-          <textarea id="subject" />
-        </label>
-      </form>
       <div className="c-left">
         <form name="contact1" method="POST" data-netlify="true" netlify>
           <input type="hidden" name="form-name" value="contact1" />
