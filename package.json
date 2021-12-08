@@ -12,6 +12,7 @@
     "react-particles-js": "^3.6.0",
     "react-scripts": "4.0.3",
     "react-tsparticles": "^1.37.4",
+    "reactjs-popup": "^2.0.5",
     "tsparticles-preset-stars": "^1.22.4",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"

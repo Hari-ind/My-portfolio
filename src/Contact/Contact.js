@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Contact() {
   return (
-    <div className="container section">
+    <div className="container section" id="Contact">
       <div className="c-left">
         <form name="contact" method="POST" data-netlify="true" netlify>
           <input type="hidden" name="form-name" value="contact" />
@@ -16,6 +16,7 @@ function Contact() {
               id="fname"
               name="fname"
               placeholder="Enter your name"
+              required
             />
           </label>
           <label htmlFor="email">
@@ -25,6 +26,7 @@ function Contact() {
               id="email"
               name="email"
               placeholder="Enter your email address"
+              required
             />
           </label>
           <label htmlFor="message">
@@ -35,7 +37,11 @@ function Contact() {
               placeholder="Enter your message"
             />
           </label>
-          <button type="submit">Send</button>
+
+          <button className="btn-send" type="submit">
+            {" "}
+            Send
+          </button>
         </form>
       </div>
       <div className="c-right">

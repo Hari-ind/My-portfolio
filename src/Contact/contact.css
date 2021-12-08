@@ -20,7 +20,7 @@ select,
 textarea:focus {
   outline: 0.5px solid rgba(197, 115, 230, 0.883) !important;
 }
-input[type="submit"] {
+.btn-send {
   background-color: transparent;
   color: white;
   padding: 12px 20px;
