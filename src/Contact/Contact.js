@@ -25,7 +25,7 @@ function Contact() {
             Message:
             <textarea id="subject" placeholder="Enter your message" />
           </label>
-          <input style={{ textAlign: "center" }} type="submit" />
+          <button type="submit">Send</button>
         </form>
       </div>
       <div className="c-right">
