@@ -31,19 +31,29 @@ function Contact() {
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="fname">
             Name:
-            <input type="text" id="fname" placeholder="Enter your name" />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter your name"
+            />
           </label>
           <label htmlFor="email">
             Email Address:
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Enter your email address"
             />
           </label>
           <label htmlFor="message">
             Message:
-            <textarea id="subject" placeholder="Enter your message" />
+            <textarea
+              name="message"
+              id="subject"
+              placeholder="Enter your message"
+            />
           </label>
           <button type="submit">Send</button>
         </form>
