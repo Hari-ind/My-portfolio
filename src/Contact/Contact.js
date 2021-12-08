@@ -7,8 +7,8 @@ function Contact() {
   return (
     <div className="container section">
       <div className="c-left">
-        <form name="contact1" method="POST" data-netlify="true" netlify>
-          <input type="hidden" name="form-name" value="contact1" />
+        <form name="contact" method="POST" data-netlify="true" netlify>
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="fname">
             Name:
             <input
