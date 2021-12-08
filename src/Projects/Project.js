@@ -2,15 +2,12 @@ import React from "react";
 import "./project.css";
 import { BiLinkExternal } from "react-icons/bi";
 import { RiGithubFill } from "react-icons/ri";
+import image from "../Assets/aq.PNG";
 
 function Project() {
   return (
     <div className="project">
-      <img
-        className="p-img"
-        src="https://soumyajit.tech/static/media/chatify.9373edda.png"
-        alt="Avatar"
-      />
+      <img className="p-img" src={image} alt="Avatar" />
 
       <div className="project-title">
         <h3>Private chat </h3>
@@ -22,10 +19,10 @@ function Project() {
         </p>
       </div>
       <div className="project-links">
-        <a target="_blank">
+        <a href="http://google.com">
           <BiLinkExternal />
         </a>
-        <a>
+        <a href="http://google.com">
           <RiGithubFill />
         </a>
       </div>

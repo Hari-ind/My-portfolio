@@ -7,6 +7,7 @@
 
 .logo {
   color: #ffffff;
+  padding-bottom: 1.2rem;
 }
 
 .navbar {
@@ -15,12 +16,15 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
+
   transition: all 0.5s ease 0s !important;
 }
 .nav-list {
   color: #ffffff;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
 }
 .li {
@@ -104,11 +108,17 @@
     margin: 1rem 6rem;
     margin-bottom: 6rem;
   }
+  .logo {
+    padding-bottom: 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .section {
     margin: 1rem 6rem;
     margin-bottom: 6rem;
+  }
+  .logo {
+    padding-bottom: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -121,5 +131,8 @@
   }
   .navbar-mob {
     min-width: 90px;
+  }
+  .logo {
+    padding-bottom: 0;
   }
 }

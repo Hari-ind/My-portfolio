@@ -1,13 +1,24 @@
-import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 
-function Particle() {
+const Particle = () => {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
   return (
     <Particles
-      params={{
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
         particles: {
           number: {
-            value: 120,
+            value: 90,
             density: {
               enable: true,
               value_area: 1500,
@@ -15,14 +26,14 @@ function Particle() {
           },
           line_linked: {
             enable: false,
-            opacity: 0.03,
+            opacity: 0.09,
           },
           move: {
             direction: "right",
-            speed: 0.05,
+            speed: 0.03,
           },
           size: {
-            value: 1,
+            value: 0.8,
           },
           opacity: {
             anim: {
@@ -49,6 +60,5 @@ function Particle() {
       }}
     />
   );
-}
-
+};
 export default Particle;

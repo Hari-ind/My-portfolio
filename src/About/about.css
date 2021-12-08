@@ -1,0 +1,10 @@
+.about {
+  color: var(--colot-text);
+  display: flex;
+  align-items: flex-start;
+}
+
+.a-left {
+  display: flex;
+  flex-direction: column;
+}

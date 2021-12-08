@@ -1,5 +1,5 @@
 import React from "react";
-import Particle from "../Particle";
+
 import "./navbar.css";
 import { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
@@ -14,8 +14,11 @@ function Navbar() {
         <a className="nav-link" href="#Home">
           <li className="li">Home</li>
         </a>
-        <a className="nav-link" href="#Home">
+        <a className="nav-link" href="#About">
           <li className="li">About</li>
+        </a>
+        <a className="nav-link" href="#Skills">
+          <li className="li">Skills</li>
         </a>
         <a className="nav-link" href="#Projects">
           <li className="li">Projects</li>
@@ -43,10 +46,13 @@ function Navbar() {
               <a className="nav-link" href="#Home">
                 <li className="li-mb">Home</li>
               </a>
-              <a className="nav-link" href="#Home">
+              <a className="nav-link" href="#About">
                 <li className="li-mb">About</li>
               </a>
-              <a className="nav-link" href="#Home">
+              <a className="nav-link" href="#Skills">
+                <li className="li-mb">Skills</li>
+              </a>
+              <a className="nav-link" href="#Projects">
                 <li className="li-mb">Projects</li>
               </a>
               <a className="nav-link" href="#Home">
